@@ -38,7 +38,7 @@ public class RegisterCandidate implements Task{
                 Enter.theValue(person.getLastname()).into(FormCandidateUi.lastName),
 
 
-                DropdownListKeyboard.withOptionText(vacancy, "G "),
+                DropdownListKeyboard.withOptionText(vacancy, "Payroll Administrator"),
 
                 Enter.theValue(person.getEmail()).into(FormCandidateUi.email),
                 Enter.theValue(person.getContactnumber()).into(FormCandidateUi.contact),
@@ -78,7 +78,7 @@ public class RegisterCandidate implements Task{
                 Click.on(btn_save6)
         );
         try {
-            Thread.sleep(10000); // Pausa de 5 segundos
+            Thread.sleep(5000); // Pausa de 5 segundos
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

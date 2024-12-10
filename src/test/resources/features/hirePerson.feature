@@ -10,11 +10,9 @@ Feature: Hire a person
     When enter the information of the person to be hired
       | firstname   | middlename   | lastname   | email   | contactnumber   | keywords   | notes   |
       | <firstname> | <middlename> | <lastname> | <email> | <contactnumber> | <keywords> | <notes> |
-    Then el sistema valida los datos del candidato
-      | validation   |
-      |<validation>  |
+    Then the system validates the candidate <data>
 
     Examples:
-      | username | password | firstname | middlename | lastname |email      | contactnumber | keywords       | notes                  | validation|
-      | Admin     | admin123| Carlos    | Andres     | Atencia  | carlos@email.com | 300300300 | Automatización | Reto automatización | nombre    |
+      | username | password | firstname | middlename | lastname |email      | contactnumber | keywords       | notes                  | data|
+      | Admin     | admin123| Carlos    | Andres     | Atencia  | carlos@email.com | 300300300 | Automatización | Reto automatización | Status: Hired |
 

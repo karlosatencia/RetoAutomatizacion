@@ -54,5 +54,7 @@ public class FormCandidateUi {
             .located(By.xpath("//button[normalize-space()='Hire']"));
     public static Target btn_save6 = Target.the("")
             .located(By.xpath("//button[normalize-space()='Save']"));
+    public static Target STATUS = Target.the("")
+            .located(By.xpath("//p[normalize-space()='Status: Hired']"));
 
 }

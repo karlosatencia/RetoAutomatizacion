@@ -17,7 +17,7 @@ public class Person {
      private String contactnumber;
      private String keywords;
      private String notes;
-     private String validation;
+     private String status;
 
     public String getFirstname() {
         return firstname;
@@ -83,12 +83,12 @@ public class Person {
         this.notes = notes;
     }
 
-    public String getValidation() {
-        return validation;
+    public String getStatus() {
+        return status;
     }
 
-    public void setValidation(String validation) {
-        this.validation = validation;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public static List<Person> setData(DataTable table){
